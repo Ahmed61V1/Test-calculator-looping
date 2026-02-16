@@ -1,0 +1,41 @@
+i = 0
+y = input("Hello, Do you ant to do some calculations(Y for yes,N for no)")
+y = y.title()
+if y == "N":
+  print("Aight Imma close")
+if y == "Y":
+   while i == 0:
+         p = input("Do you want to take the power of a number(Y for yes, N for no)")
+         p = p.title()
+         if p == "Y":
+            l = int(input("Please input a base number: "))
+            k = int(input("Please input a power: "))
+            h = 0
+            z = l
+            while h < k-1:
+                z=z*l
+                h=h+1
+            print(f"The answer is {z}")
+            v = input("Do you want to do another calculation(Y for yes, N for no)")
+            v = v.title()
+            if v == "N":
+               print("Aight Imma close")
+               i = i+1
+
+         if p == "N":
+            a = int(input("Please enter the first number: "))
+            b = int(input("Please enter the second number: "))
+            c = input("Please enter which operation you want to do(+ for adding, - for subtraction, * for multplying, / for dividing)")
+            if c == "+":
+               print(f"the answer is: {a+b}")
+            if c == "-":
+               print(f"the answer is: {a-b}")
+            if c == "*":
+               print(f"the answer is: {a*b}")
+            if c == "/":
+               print(f"the answer is: {a/b}")
+            v = input("Do you want to do another calculation(Y for yes, N for no)")
+            v = v.title()
+            if v == "N":
+               print("Aight Imma close")
+               i = i+1
