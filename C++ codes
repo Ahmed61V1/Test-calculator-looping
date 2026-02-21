@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    
+    int x,y,a,b,i= 0;
+    while (i == 0)
+    {
+        cout << "For adding up the numbers enter 1,For subtraction press 2, For multipiclation enter 3, to divide enter 4 ";
+        cin >> a;
+        cout << "Please enter the first number: ";
+        cin >> x;
+        cout << "Please enter the second number: ";
+        cin >> y;
+    
+        if(a == 1) b = x+y ;
+        if(a == 2) b = x-y ;
+        if(a == 3) b = x*y ;
+        if(a == 4) b = x/y ;
+        cout << (b) << endl;
+        system ("PAUSE");
+        cout << "Do you want to continue? If yes press 0, if no press 1: ";
+        cin >> i;
+}}
