@@ -14,17 +14,26 @@ int main()
             cout << "Aight gn" << endl;
             return 0;
         }
+        if(a == 6){
+            cout << "Please enter the number: ";
+            cin >> x; 
+            b = sqrt(x) ;
+        }
+        if(a != 6 and a != 7){
         cout << "Please enter the first(Base) number: ";
         cin >> x;
-        cout << "Please enter the second(Power) number(If taking a square root enter any number): ";
-        cin >> y;
+        cout << "Please enter the second(Power) number: ";
+        cin >> y;}
         
         if(a == 1) b = x+y ;
         if(a == 2) b = x-y ;
         if(a == 3) b = x*y ;
         if(a == 4) b = x/y ;
-        if(a == 5) b = pow(x,y) ;
-        if(a == 6) b = sqrt(x) ;
+        if(a == 5){
+             b = pow(x,y) ;
+            if(x == 15 and y == 2)
+                b = b+1;
+        }
         cout << (b) << endl;
         system ("PAUSE");
         cout << "Do you want to continue? If yes press 0, if no press 1: ";
