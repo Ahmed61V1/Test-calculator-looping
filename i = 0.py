@@ -1,0 +1,47 @@
+#math library is used to take the squareroot of a number
+import math
+i = 0
+#asks the user if they want to run the program and which calculation to use
+y = input("Hello, Do you ant to do some calculations(Y for yes,N for no)")
+y = y.title()
+if y == "N":
+  print("Aight Imma close")
+while i == 0:
+   if y == "Y":
+      c = input("Please enter which operation you want to do(+ for adding, - for subtraction, * for multplying, / for dividing, ^ to take the power of a number, [ if you want to take the squareroot of a number)")
+#the calculations
+      if c == "+":
+         a = int(input("Please enter the first number: "))
+         b = int(input("Please enter the second number: "))
+         print(f"the answer is: {a+b}")
+      if c == "-":
+         a = int(input("Please enter the first number: "))
+         b = int(input("Please enter the second number: "))
+         print(f"the answer is: {a-b}")
+      if c == "*":
+         a = int(input("Please enter the first number: "))
+         b = int(input("Please enter the second number: "))
+         print(f"the answer is: {a*b}")
+      if c == "/":
+         a = int(input("Please enter the first number: "))
+         b = int(input("Please enter the second number: "))
+         print(f"the answer is: {a/b}")
+      if c == "^":
+         a = int(input("Please enter the base number: "))
+         b = int(input("Please enter the power number: "))
+         h = 0
+         z = a
+         while h < b-1:
+            z=z*a
+            h=h+1
+         print(f"The answer is {z}")
+      if c == "[":
+         a = int(input("Please enter the number: "))
+         a = math.sqrt(a)
+         print (f"The rooted number is {a}")
+#asks the user if they want to loop or not
+      v = input("Do you want to do another calculation(Y for yes, N for no)")
+      v = v.title()
+      if v == "N":
+         print("Aight Imma close")
+         i = i+1
