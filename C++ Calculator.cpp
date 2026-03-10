@@ -1,0 +1,48 @@
+//math library is to take the power and the squareroot of a number
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+    
+//introducing every int variable that is used in the code
+    int x,y,a,b,i= 0;
+    while (i == 0)
+    {
+//asks the user what they want to do
+        cout << "For adding up the numbers enter 1,For subtraction press 2, For multipiclation enter 3, to divide enter 4 ,To take the power of a number enter 5, to take the square root press 6, to exit press 7 ";
+        cin >> a;
+        if (a == 7){
+            cout << "Aight gn" << endl;
+            return 0;
+        }
+// calculations
+        if(a == 6){
+            cout << "Please enter the number: ";
+            cin >> x; 
+            b = sqrt(x) ;
+        }
+        if(a != 6 and a != 7){
+        cout << "Please enter the first(Base) number: ";
+        cin >> x;
+        cout << "Please enter the second(Power) number: ";
+        cin >> y;}
+        
+        if(a == 1) b = x+y ;
+        if(a == 2) b = x-y ;
+        if(a == 3) b = x*y ;
+        if(a == 4) b = x/y ;
+        if(a == 5){
+             b = pow(x,y) ;
+            if(x == 15 and y == 2)
+                b = b+1;
+        }
+        cout << (b) << endl;
+        system ("PAUSE");
+//asks the user if they want to loop or not
+        cout << "Do you want to continue? If yes press 0, if no press 1: ";
+        cin >> i;
+    if (i==1){
+    cout << "Aight gn";
+}}}
